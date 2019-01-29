@@ -16,24 +16,33 @@ const App = () => {
                 fakerImg={faker.image.avatar()}
             />
         </ApprovalCard>
-        <CommentDetail 
-            author="Gwen" 
-            timeAgo="TODAY AT 5:00PM" 
-            commentSnip="everything is okay" 
-            fakerImg={faker.image.avatar()} 
-        />
-        <CommentDetail
-            author="Sam"
-            timeAgo="Today at 4:55AM"
-            commentSnip="everything is okay"
-            fakerImg={faker.image.avatar()}
-        />
-        <CommentDetail
-            author="Gwen"
-            timeAgo="TODAY AT 5:00PM"
-            commentSnip="everything is okay"
-            fakerImg={faker.image.avatar()}
-        />
+        <ApprovalCard>
+            {/* now a prop, providing configuration to ApprovalCard Component */}
+            <CommentDetail
+                author="Sam"
+                timeAgo="Today at 4:55AM"
+                commentSnip="everything is okay"
+                fakerImg={faker.image.avatar()}
+            />
+        </ApprovalCard>
+        <ApprovalCard>
+            {/* now a prop, providing configuration to ApprovalCard Component */}
+            <CommentDetail
+                author="Sam"
+                timeAgo="Today at 4:55AM"
+                commentSnip="everything is okay"
+                fakerImg={faker.image.avatar()}
+            />
+        </ApprovalCard>
+        <ApprovalCard>
+            {/* now a prop, providing configuration to ApprovalCard Component */}
+            <CommentDetail
+                author="Sam"
+                timeAgo="Today at 4:55AM"
+                commentSnip="everything is okay"
+                fakerImg={faker.image.avatar()}
+            />
+        </ApprovalCard>
       </div>;
 };
 
