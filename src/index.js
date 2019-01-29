@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom'
 // can treat api as large object, need to add () to use
 import faker from 'faker';
 import CommentDetail from './CommentDetail'
+import ApprovalCard from './ApprovalCard'
 
 const App = () => {
     return <div className="ui container comments">
+        <ApprovalCard/>
         <CommentDetail 
             author="Sam" 
             timeAgo="Today at 4:55AM" 
